@@ -9,6 +9,15 @@
  
   } 
   */
+
+
+
+
+
+
+
+
+
   #textstyle{
     font-size: 18px;
     color: white;
@@ -56,7 +65,11 @@
   font-family:'Times New Roman', Times, serif !important;
   color: white !important;
  }
-
+ .navbar.scrolled #navcontainer{
+background-color: whitesmoke;
+  border-radius: 20px;
+  margin-top: 20px;
+}
   .navbar.scrolled  #textstyle{
    color: black; /* Change button color when scrolled */
   }

@@ -1,10 +1,13 @@
-const navbar = document.querySelector('.navbar');
+  // Get the navbar
+  const navbar = document.querySelector('.navbar');
 
-// Listen for scroll event
-window.addEventListener('scroll', function() {
-  if (window.scrollY >= 470) {
-    navbar.classList.add('scrolled');
-  } else {
-    navbar.classList.remove('scrolled');
-  }
-});
+  // Listen for scroll event
+  window.addEventListener('scroll', function() {
+    if (window.scrollY >= 500) {
+      navbar.classList.add('scrolled');
+      navbar.classList.add('hidden');
+    } else {
+      navbar.classList.remove('scrolled');
+      navbar.classList.remove('hidden');
+    }
+  });
