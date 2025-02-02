@@ -673,8 +673,82 @@ background-color: whitesmoke;
   font-family: 'Times New Roman', Times, serif;
 }
 
+@media (max-width:  660px) {
+  .fivesectionheading{
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 550px) {
+  .fivesectionheading{
+    font-size: 35px;
+  }
+}
+
 @media (max-width: 450px) {
   .fivesectionheading{
     font-size: 25px;
   }
+}
+
+/*-------------------------------*/
+#sixsectioncardheading{
+  margin-top: 100px;
+}
+
+#sixsectionstrike{
+  text-align: center;
+ font-family: 'Times New Roman', Times, serif;
+  margin-top: 50px;
+}
+
+.sixsectionhead{
+  color: #007bff;
+  font-size: 45px;
+}
+.sixsectioncontent{
+  font-size: 18px;
+}
+@media (max-width:  660px) {
+  #sixsectionstrike{
+    font-size: 40px;
+  }
+  .sevensectionhead{
+    color: #007bff;
+    font-size: 40px !important;
+  }
+}
+
+@media (max-width: 550px) {
+  #sixsectionstrike{
+    font-size: 35px;
+  }
+  .sevensectionhead{
+    color: #007bff;
+    font-size: 35px !important;
+  }
+  #sixsectioncardheading{
+    margin-top: 50px;
+  }
+}
+
+@media (max-width: 450px) {
+  #sixsectionstrike{
+    font-size: 25px;
+  }
+  .sevensectionhead{
+    color: #007bff;
+    font-size: 30px !important;
+  }
+
+  #sixsectioncardheading{
+    margin-top: 10px;
+  }
+}
+
+/*--------------------------------*/
+
+.sevensectionhead{
+  color: #007bff;
+  font-size: 45px;
 }
