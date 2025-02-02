@@ -391,3 +391,290 @@ background-color: whitesmoke;
     padding-right: 20px;
   }
 }
+
+
+/*----------------------------------------*/
+
+#fourthsection{
+  margin-top: 100px;
+  text-align: justify;
+  max-width: 1000px;
+  text-align: left;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.fourthsectionheading{
+  font-size: 35px;
+  color: black;
+  font-family: 'Times New Roman', Times, serif;
+}
+.fourthsectioncontent{
+  font-family: 'Times New Roman', Times, serif;
+}
+
+
+.section10body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  overflow-x: hidden;
+
+}
+#section10CardsWrapper3 {
+  position: relative;
+  width: 100%;
+  height: 100vh !important;
+  overflow: hidden;
+  touch-action: pan-y;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 0px !important;
+  padding: 20px 0;
+  box-sizing: border-box;
+
+ 
+}
+
+#section10CardsContainer3 {
+  display: flex;
+  gap: 50px;
+  padding-left: 20px;
+  width: max-content;
+  padding-top: 70px;
+}
+
+
+#fourt_card1{
+  background-image: url(images/fourthcard1st\ img.png);
+  background-size: cover; /* Image ko full cover karein */
+  background-position: center; /* Image ko center karein */
+  background-repeat: no-repeat; /* Repeat na karein */
+}
+#fourt_card2{
+  background-image: url(images/fourth\ section3rd\ img.jpg);
+  background-size: cover; /* Image ko full cover karein */
+  background-position: center; /* Image ko center karein */
+  background-repeat: no-repeat; /* Repeat na karein */
+}
+#fourt_card3{
+  background-image: url(images/fourthcard2st\ img.jpg.png);
+  background-size: cover; /* Image ko full cover karein */
+  background-position: center; /* Image ko center karein */
+  background-repeat: no-repeat; /* Repeat na karein */
+}
+
+#fourt_card4{
+  background-image: url(images/fourth\ section\ 4th\ img.jpg);
+  background-size: cover; /* Image ko full cover karein */
+  background-position: center; /* Image ko center karein */
+  background-repeat: no-repeat; /* Repeat na karein */
+}
+.section10Card {
+  flex: 0 0 auto;
+  width: 300px;
+  height: 400px;
+  background: rgba(70, 64, 64, 0.003);
+  background-color: rgba(70, 64, 64, 0.003); 
+  backdrop-filter: blur(10px); 
+  -webkit-backdrop-filter: blur(10px);
+  
+  border: 1px solid rgba(255, 255, 255, 0.3); 
+
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+  
+  color: black;
+  text-transform: capitalize;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+ 
+}
+
+
+
+
+/*.section10Card {
+  width: 350px;
+  height: auto;
+  display: grid;
+  background: rgba(70, 64, 64, 0.003);
+  background-color: rgba(70, 64, 64, 0.003); 
+  backdrop-filter: blur(10px); 
+  -webkit-backdrop-filter: blur(10px);
+  place-content: center;
+  align-items: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  color: white;
+  /*text-shadow: 0 1px 0 rgba(70, 64, 64, 0.003);
+  --border-angle: 0turn;
+  --main-bg: conic-gradient(
+    from var(--border-angle),
+    #213,
+    rgba(70, 64, 64, 0.003) 5%,
+    #112 60%,
+    #213 95%
+  );
+  border: solid 5px transparent;
+  border-radius: 2em;
+  --gradient-border: conic-gradient(
+    from var(--border-angle),
+    transparent 25%,
+    #08f,
+    rgb(255, 0, 225) 99%,
+    transparent
+  );
+  background: var(--main-bg) padding-box, var(--gradient-border) border-box, var(--main-bg) border-box;
+  background-position: center center;
+  -webkit-animation: bg-spin 3s linear infinite;
+          animation: bg-spin 3s linear infinite;
+}
+@-webkit-keyframes bg-spin {
+  to {
+    --border-angle: 1turn;
+  }
+}
+@keyframes bg-spin {
+  to {
+    --border-angle: 1turn;
+  }
+}
+.box:hover {
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+}
+
+@property --border-angle {
+  syntax: "<angle>";
+  inherits: true;
+  initial-value: 0turn;
+}*/
+
+
+
+
+.section10pbult{
+  font-size: 17px !important;
+  padding-right: 5px;
+  font-family: 'Times New Roman', Times, serif;
+  text-align: left !important;
+
+}
+
+@media (max-width: 768px) {
+  
+.section10Card {
+  height: auto;
+}
+}
+
+.section10Card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2), 0 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+.section10Card h1 {
+  color: white; /* Dark text for better readability */
+}
+
+.section10Heading{
+  font-size: 18px;
+  text-align: left !important;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
+  margin-top: 300px;
+  color: white;
+  padding-left: 10px;
+}
+
+.section10img{
+  text-align: center;
+}
+.section10p{
+  font-size: 35px !important;
+  font-family: 'Times New Roman', Times, serif;
+  text-align: left;
+ padding-left: 10px;
+  color: white;
+  font-weight: bold;
+}
+
+.section10pbult{
+  font-size: 17px;
+  padding-right: 5px;
+  font-family: 'Times New Roman', Times, serif;
+  text-align: left !important;
+ 
+}
+
+.section10psecond{
+  font-size: 35px !important;
+  font-family: 'Times New Roman', Times, serif;
+  text-align: left;
+ padding-left: 10px;
+  color: white;
+  font-weight: bold;
+ 
+}
+.section10psecondcard4{
+  font-size: 26px !important;
+  font-family: 'Times New Roman', Times, serif;
+  text-align: left;
+ padding-left: 10px;
+  color: white;
+  font-weight: bold;
+ 
+}
+
+.modern-linksection10 {
+  text-decoration: none;
+  color: #007bff;
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin-top: 0px;
+  margin-bottom: 10px; /* Add bottom margin to separate the links */
+  display: inline-block;
+  transition: color 0.3s ease, transform 0.3s ease;
+  padding-left: 5px;
+  cursor: pointer;
+}
+
+.modern-linksection10:hover {
+  color: #0056b3;
+  transform: scale(1.1);
+}
+
+.modern-linksection10:active {
+  color: #003366;
+}
+
+#section10lastcard{
+  text-align: center;
+  margin-top: 100px;
+  padding: 10px;
+  font-size: 20px;
+}
+
+
+/*===================================================*/
+
+.fivthsectionbg{
+  background-color: #ece7fb;
+  padding-top: 70px;
+  padding-bottom: 50px;
+}
+
+
+.fivesectionheading{
+  font-size: 50px;
+  font-family: 'Times New Roman', Times, serif;
+  color:#cc2eb2;
+}
+
+.fivesectioncontent{
+  font-size: 18px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+@media (max-width: 450px) {
+  .fivesectionheading{
+    font-size: 25px;
+  }
+}
