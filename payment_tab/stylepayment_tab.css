@@ -375,7 +375,10 @@ background-color: whitesmoke;
     .thirdsectionstriketext{
       font-size: 35px;
     }
-    
+    #thirdsectionrow{
+        display: block;
+        padding: 10px;
+    }
   }
   
   @media (max-width: 400px) {
