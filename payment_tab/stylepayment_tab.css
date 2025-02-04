@@ -315,7 +315,7 @@ background-color: whitesmoke;
     background-color: #ece7fb;
     padding-top: 70px;
     padding-bottom: 50px;
-    margin-top: 20px;
+    
   }
   
   
@@ -359,10 +359,10 @@ background-color: whitesmoke;
 
   .second_section{
     text-align: center;
-    margin-top: 50px;
+   padding-top: 150px !important;
     font-family: 'Times New Roman', Times, serif;
   padding: 10px;
-   
+   background-color: #ece7fb;
   }
   
   .thirdsectionstriketext{
