@@ -312,7 +312,7 @@ background-color: whitesmoke;
   /*===================================================*/
 
 .fivthsectionbg{
-    background-color: #ece7fb;
+  /*  background-color: #ece7fb;*/
     padding-top: 70px;
     padding-bottom: 50px;
     
@@ -329,7 +329,17 @@ background-color: whitesmoke;
     font-size: 18px;
     font-family: 'Times New Roman', Times, serif;
   }
-  
+  @media (max-width:  992px) {
+  #secondcardmainrow{
+    display: block;
+  }
+  #secondcardmaincol1{
+    width: 100%;
+  }
+  #secondcardmaincol2{
+    width: 100% !important;
+  }
+}
   @media (max-width:  660px) {
     .fivesectionheading{
       font-size: 40px;
@@ -344,6 +354,9 @@ background-color: whitesmoke;
     #secondsectionrow{
         display: block;
         padding: 10px;
+    }
+    #secondcardmaincol2{
+      width: 100% !important;
     }
   }
   
@@ -362,7 +375,7 @@ background-color: whitesmoke;
    padding-top: 150px !important;
     font-family: 'Times New Roman', Times, serif;
   padding: 10px;
-   background-color: #ece7fb;
+   
   }
   
   .thirdsectionstriketext{
