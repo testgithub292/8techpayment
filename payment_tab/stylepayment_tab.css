@@ -672,3 +672,94 @@ background-color: whitesmoke;
   font-family: 'Times New Roman', Times, serif; 
   margin-bottom: 50px;
 }
+
+
+/*-------------------------------*/
+#sixsectioncardheading{
+  margin-top: 100px;
+}
+
+#sixsectionstrike{
+  text-align: center;
+ font-family: 'Times New Roman', Times, serif;
+  margin-top: 50px;
+}
+
+.sixsectionhead{
+  color: #007bff;
+  font-size: 45px;
+}
+.sixsectioncontent{
+  font-size: 18px;
+}
+@media (max-width:  660px) {
+  #sixsectionstrike{
+    font-size: 40px;
+  }
+  .sevensectionhead{
+    color: #007bff;
+    font-size: 40px !important;
+  }
+}
+
+@media (max-width: 550px) {
+  #sixsectionstrike{
+    font-size: 35px;
+  }
+  .sevensectionhead{
+    color: #007bff;
+    font-size: 35px !important;
+  }
+  #sixsectioncardheading{
+    margin-top: 50px;
+  }
+}
+
+@media (max-width: 450px) {
+  #sixsectionstrike{
+    font-size: 25px;
+  }
+  .sevensectionhead{
+    color: #007bff;
+    font-size: 30px !important;
+  }
+
+  #sixsectioncardheading{
+    margin-top: 10px;
+  }
+}
+
+.headingthirdsection{
+  font-size: 35px;
+  font-weight: bold;
+  font-family: 'Times New Roman', Times, serif;
+}
+#image-containerthirdsection {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  border-radius: 15px;
+}
+
+#image-containerthirdsection img {
+  transition: transform 0.5s ease;
+  cursor: pointer;
+}
+
+#image-containerthirdsection:hover img {
+  transform: scale(1.1) translateY(20px);  /* Shift the image on hover */
+}
+
+@media (max-width: 768px) {
+  #thirdsectionrow{
+    display: block;
+  }
+  #image-containerthirdsection {
+    width: 100%;
+  }
+  #thirdsectiontextcol{
+    width: 100% !important;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
