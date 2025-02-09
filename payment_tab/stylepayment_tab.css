@@ -777,3 +777,95 @@ background-color: whitesmoke;
     padding-right: 20px;
   }
 }
+
+/*-------------------------------------*/
+
+.carousel-item {
+  min-height: 400px;
+}
+
+.slider-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slider-text {
+  max-width: 50%;
+  padding: 20px;
+  opacity: 0;
+  transform: translateY(50px);
+}
+
+.slider-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  opacity: 0;
+  transform: scale(0.95);
+}
+
+/* 🎨 Black Arrow Icons */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(1);
+}
+
+/* 🎨 Black Dots */
+.carousel-indicators button {
+  background-color: black !important;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.carousel-indicators .active {
+  background-color: black !important;
+}
+
+/* 🎬 Animations */
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: scale(0.95);
+  }
+  to {
+      opacity: 1;
+      transform: scale(1);
+  }
+}
+
+@keyframes slideUp {
+  from {
+      opacity: 0;
+      transform: translateY(50px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+.carousel-item.active .slider-image img {
+  animation: fadeIn 1s ease-in-out forwards;
+}
+
+.carousel-item.active .slider-text {
+  animation: slideUp 1s ease-in-out forwards;
+}
+
+/* 📱 Responsive - Mobile View */
+@media (max-width: 768px) {
+  .slider-content {
+      flex-direction: column;
+      text-align: center;
+  }
+  .slider-text {
+      max-width: 100%;
+      padding: 10px;
+  }
+  .slider-image {
+      margin-top: 10px;
+  }
+ 
+}
