@@ -342,6 +342,7 @@ background-color: whitesmoke;
       padding-left: 10px;
       text-align: center;
       justify-content: center;
+      padding-top: 100px;
   }
 
   .hero_firstsectionloyalty {
@@ -349,6 +350,7 @@ background-color: whitesmoke;
     padding-left: 10px;
     text-align: center;
     justify-content: center;
+    padding-top: 100px;
 }
 
   .content_firstsection h1 {

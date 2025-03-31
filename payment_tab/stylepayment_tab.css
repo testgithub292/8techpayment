@@ -318,6 +318,11 @@ background-color: whitesmoke;
     
   }
   
+  .Eaislymonitorsectionbg{
+   background-color: #ece7fb;
+  padding-top: 70px;
+  padding-bottom: 50px;
+  }
 #fivthsectionbg{
   /*  background-color: #ece7fb;*/
     padding-top: 70px;
@@ -379,7 +384,7 @@ background-color: whitesmoke;
 
   .second_section{
     text-align: center;
-   padding-top: 150px !important;
+   padding-top: 20px !important;
     font-family: 'Times New Roman', Times, serif;
   padding: 10px;
    
@@ -421,7 +426,7 @@ background-color: whitesmoke;
 
   .fourt_section_strik{
     text-align: center;
-   padding-top: 150px !important;
+   padding-top: 50px !important;
     font-family: 'Times New Roman', Times, serif;
   padding: 10px;
   }

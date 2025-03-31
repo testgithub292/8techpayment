@@ -316,9 +316,12 @@ background-color: whitesmoke;
   @media (max-width: 768px) {
     .hero_firstsection {
         height: 70vh;
-        padding-left: 10px;
-        text-align: center;
+        padding: 10px;
+        display: flex;
+       
+        align-items: center;
         justify-content: center;
+        padding-top: 100px;
     }
   
     .hero_firstsectionloyalty {
@@ -533,6 +536,7 @@ background-color: whitesmoke;
     #thirdsectionrow{
         display: block;
         padding: 10px;
+        text-align: center;
     }
   }
   
