@@ -237,7 +237,10 @@ background-color: whitesmoke;
     position: relative;
   }
  
-
+  body {
+    font-family: 'Times New Roman', Times, serif !important;
+    
+  }
 /*-------------------------------------------*/
 
 
@@ -391,7 +394,11 @@ background-color: whitesmoke;
     padding-right: 20px;
   }
 }
-
+@media (max-width: 450px) {
+  .headingthirdsection{
+    font-size: 25px;
+}
+}
 
 /*----------------------------------------*/
 
@@ -410,6 +417,17 @@ background-color: whitesmoke;
 }
 .fourthsectioncontent{
   font-family: 'Times New Roman', Times, serif;
+}
+
+@media (max-width: 768px) {
+  .fourthsectionheading{
+    font-size: 30px;
+}
+}
+@media (max-width: 450px) {
+  .fourthsectionheading{
+    font-size: 25px;
+}
 }
 
 
@@ -663,7 +681,7 @@ background-color: whitesmoke;
 
 
 .fivesectionheading{
-  font-size: 50px;
+  font-size: 40px;
   font-family: 'Times New Roman', Times, serif;
   color:#cc2eb2;
 }
@@ -675,13 +693,13 @@ background-color: whitesmoke;
 
 @media (max-width:  660px) {
   .fivesectionheading{
-    font-size: 40px;
+    font-size: 35px;
   }
 }
 
 @media (max-width: 550px) {
   .fivesectionheading{
-    font-size: 35px;
+    font-size: 30px;
   }
 }
 
@@ -704,25 +722,21 @@ background-color: whitesmoke;
 
 .sixsectionhead{
   color: #007bff;
-  font-size: 45px;
+  font-size: 35px;
 }
 .sixsectioncontent{
   font-size: 18px;
 }
 @media (max-width:  660px) {
-  #sixsectionstrike{
-    font-size: 40px;
-  }
+ 
   .sevensectionhead{
     color: #007bff;
-    font-size: 40px !important;
+    font-size: 35px !important;
   }
 }
 
 @media (max-width: 550px) {
-  #sixsectionstrike{
-    font-size: 35px;
-  }
+ 
   .sevensectionhead{
     color: #007bff;
     font-size: 35px !important;
@@ -733,16 +747,17 @@ background-color: whitesmoke;
 }
 
 @media (max-width: 450px) {
-  #sixsectionstrike{
-    font-size: 25px;
-  }
+
   .sevensectionhead{
     color: #007bff;
-    font-size: 30px !important;
+    font-size: 25px !important;
+  }
+  .sixsectionhead{
+    font-size: 25px;
   }
 
   #sixsectioncardheading{
-    margin-top: 10px;
+    margin-top: 5px;
   }
 }
 
@@ -750,7 +765,7 @@ background-color: whitesmoke;
 
 .sevensectionhead{
   color: #007bff;
-  font-size: 45px;
+  font-size: 35px;
 }
 
 
@@ -767,7 +782,7 @@ background-color: whitesmoke;
 }
 
 .headingsevensection{
-  font-size: 45px;
+  font-size: 35px;
   font-weight: bold;
   font-family: 'Times New Roman', Times, serif;
 }
@@ -803,7 +818,7 @@ background-color: whitesmoke;
 
 @media (max-width: 450px) {
   .headingsevensection{
-    font-size: 35px;
+    font-size: 25px;
   }
 
   #sevensectionstrike{

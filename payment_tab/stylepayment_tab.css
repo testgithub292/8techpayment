@@ -9,7 +9,9 @@
  
   } 
   */
-
+body{
+  font-family: 'Times New Roman', Times, serif !important;
+}
 
 
   #navcontainer{
@@ -238,7 +240,9 @@ background-color: whitesmoke;
   }
  
 
-
+  body p {
+    font-size: 18px;
+  }
 
   /*===============================================*/
 
@@ -248,7 +252,7 @@ background-color: whitesmoke;
 
   .firstsectionheading{
     font-family: 'Times New Roman', Times, serif;
-    font-size: 60px;
+    font-size: 50px;
     font-weight: bold;
   }
 
@@ -335,10 +339,15 @@ background-color: whitesmoke;
     font-size: 50px;
     font-family: 'Times New Roman', Times, serif;
     color:#cc2eb2;
+
   }
-  
+  .whychosepayemnt_section {
+    font-size: 35px;
+    font-family: 'Times New Roman', Times, serif;
+    color:#cc2eb2;
+  } 
   .fivesectioncontent{
-    font-size: 18px;
+    
     font-family: 'Times New Roman', Times, serif;
   }
   @media (max-width:  992px) {
@@ -376,10 +385,22 @@ background-color: whitesmoke;
     .fivesectionheading{
       font-size: 25px;
     }
+    .whychosepayemnt_section {
+      font-size: 25px;
+      font-family: 'Times New Roman', Times, serif;
+      color:#cc2eb2;
+    } 
+    .merchantpayemntpage_heading{
+      font-size: 25px !important;
+    }
   }
   
 
   /*-----------------------------------*/
+  .merchantpayemntpage_heading{
+    font-size: 35px;
+  }
+  /*---------------------------------*/
 
 
   .second_section{
@@ -406,9 +427,9 @@ background-color: whitesmoke;
     }
   }
   
-  @media (max-width: 400px) {
+  @media (max-width: 450px) {
     .thirdsectionstriketext{
-      font-size: 30px;
+      font-size: 25px;
     }
     
   }
@@ -780,6 +801,10 @@ background-color: whitesmoke;
     width: 100% !important;
     padding-left: 20px;
     padding-right: 20px;
+  }
+  .headingthirdsection{
+  
+    font-size: 25px;
   }
 }
 

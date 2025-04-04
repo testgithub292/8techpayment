@@ -239,6 +239,12 @@ background-color: whitesmoke;
 
   /*--------------------------------------*/
 
+  body{
+    font-family: 'Times New Roman', Times, serif !important;
+  }
+  body p{
+    font-size: 18px;
+  }
   
 .hero_firstsection {
     position: relative;
@@ -522,7 +528,7 @@ background-color: whitesmoke;
   /*-----------------------------------*/
 
 
-  
+   
   .thirdsectionstriketext{
     font-size: 35px;
     font-weight: bold;
