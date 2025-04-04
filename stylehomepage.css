@@ -241,6 +241,9 @@ background-color: whitesmoke;
     font-family: 'Times New Roman', Times, serif !important;
     
   }
+  body p{
+    font-size: 18px;
+  }
 /*-------------------------------------------*/
 
 
