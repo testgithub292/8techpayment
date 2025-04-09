@@ -846,13 +846,13 @@ background-color: whitesmoke;
   background-position: center; /* Image ko center karein */
   background-repeat: no-repeat; /* Repeat na karein */
 }
-
+/*
 @media (max-width: 768px) {
  #eightsectionrow{
   margin-top: 50px;
   display: block;
  }
-}
+}*/
 .sevenfirstcardhead{
   font-size: 25px;
   color: white;
