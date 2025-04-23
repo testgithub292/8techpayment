@@ -61,7 +61,7 @@
     border-radius: 3px;
     color: rgba(0, 0, 0, 0.703);
   }
-
+ 
  .navbar-brand{
   font-size: 25px !important;
   font-family:Arial, Helvetica, sans-serif;
@@ -95,6 +95,8 @@ background-color: whitesmoke;
    .navbar.scrolled #navbar-brand{
     color: black !important; /* Change button color when scrolled */
    }
+
+ 
 
   .nav-link.dropdown-toggle::after {
       display: none;
