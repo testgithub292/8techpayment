@@ -211,6 +211,7 @@
         overflow-y: auto;
         -webkit-overflow-scrolling: touch;
     }
+    
 }
 
 
@@ -358,3 +359,10 @@
         grid-template-columns: 1fr;
     }
 }
+
+
+
+
+/*-------------------------------*/
+
+

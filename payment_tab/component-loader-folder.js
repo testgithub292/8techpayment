@@ -121,7 +121,7 @@ class ComponentLoader {
                 duration: 1000,
                 once: true,
                 offset: 100,
-                
+              
             });
             console.log('🔄 AOS reinitialized');
         }
@@ -165,8 +165,8 @@ loadAllComponents() {
     console.log('🔄 Loading components in parallel...');
 
     Promise.all([
-        this.loadComponent('nav.html', 'navbar-container'),
-        this.loadComponent('footer.html', 'footer-container')
+        this.loadComponent('navbar.html', 'navbar-container'),
+        this.loadComponent('footer-new.html', 'footer-container')
     ]).then(() => {
         this.finalizeInitialization();
     }).catch(error => {

@@ -669,4 +669,8 @@ html, body {
         overflow-y: auto;
         -webkit-overflow-scrolling: touch;
     }
+
+    .features-intro {
+        text-align: center;
+    }
 }
