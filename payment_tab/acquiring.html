@@ -4,370 +4,250 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="title" content="Card Payment Processing | Get8Tech Payments">
-<meta name="description" content="Simplify card payment processing with Get8Tech. Manage transactions, refunds, and chargebacks while accessing full insights and flexible settlement options through one integration.">
-<meta name="keywords" content="card payment processing, Get8Tech Payments, merchant account, transaction insights, flexible settlement, chargeback management, payment processor, global payments, fraud prevention, real-time transactions, single integration, payment gateway, secure transactions, sales channel payments, dedicated support">
-<meta property="og:title" content="Simple Card Payment Processing | Get8Tech">
-<meta property="og:description" content="Explore global markets with Get8Tech’s secure card processing platform. Manage all transactions, chargebacks, and settlements through one integrated solution.">
-<meta name="twitter:title" content="Card Processing Made Simple | Get8Tech Payments">
-<meta name="twitter:description" content="Get8Tech offers all-in-one payment processing with flexible settlements, real-time insights, and secure fraud protection—built to grow your business.">
-    <title>Acquiring</title>
-
+    <meta name="description" content="Simplify card payment processing with Get8Tech. Manage transactions, refunds, and chargebacks while accessing full insights and flexible settlement options through one integration.">
+    <meta name="keywords" content="card payment processing, Get8Tech Payments, merchant account, transaction insights, flexible settlement, chargeback management, payment processor, global payments, fraud prevention, real-time transactions, single integration, payment gateway, secure transactions, sales channel payments, dedicated support">
+    <meta property="og:title" content="Simple Card Payment Processing | Get8Tech">
+    <meta property="og:description" content="Explore global markets with Get8Tech's secure card processing platform. Manage all transactions, chargebacks, and settlements through one integrated solution.">
+    <meta name="twitter:title" content="Card Processing Made Simple | Get8Tech Payments">
+    <meta name="twitter:description" content="Get8Tech offers all-in-one payment processing with flexible settlements, real-time insights, and secure fraud protection—built to grow your business.">
+    <title>Card Payment Processing | Get8Tech</title>
+    <script src="component-loader-folder.js"></script>
+    <!-- Favicon -->
+    <link rel="icon" type="x-icon" sizes="any" href="images/logotab icon.jpeg">
     
-    <link rel="icon" type="x-icon" sizes="any"   href="../images/logotab icon.jpeg">
-    <link rel="stylesheet" href="stylepayment_tab.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
-      
-    <link rel="stylesheet" href="https://unpkg.com/bs-brain@2.0.4/components/navbars/navbar-1/assets/css/navbar-1.css">
-
-      <!--CDN social Link----------------------------------------------------------------->
-  
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="navbar-and-footer.css">
+    <link rel="stylesheet" href="acquiring.css">
 </head>
-<body>
-    <header>
-        <nav class="navbar navbar-expand-lg navbarcolorstyle bsb-navbar bsb-navbar-hover bsb-navbar-caret fixed-top" id="navbar">
-            <div class="container"  id="navcontainer">
-                <a class="navbar-brand" id="navbar-brand" href="../index.html">
-                    <b>Get8Tech Payment</b>
-                    <!--img src="images/logo final bg none.png" class="imagenavfirstlogo" alt="logo-Gettangi.com" width="170px" height="50px"-->
-                </a>
-              
-                <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
-                      <path fill="black" fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
-
-                    </svg> 
-                </button>
-                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-                    <div class="offcanvas-header" id="offcanvasNavbarDropdown">
-                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                    </div>
-                    <div class="offcanvas-body" id="navbarcolorstyle">
-                        <ul class="navbar-nav justify-content-end flex-grow-1">
-                            <li class="nav-item">
-                                <a class="nav-link active" id="textstyle" aria-current="page" href="../index.html">Home</a>
-                            </li>
-                              <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Payments</a>
-                                <ul class="dropdown-menu border-0 shadow bsb-zoomIn" id="dropdownitemcolor" aria-labelledby="servicesDropdown">
-                                    <li><a class="dropdown-item" id="dropdownitemcolor" href="Online Payments.html">Online Payments</a></li>
-                                    <li><a class="dropdown-item" id="dropdownitemcolor" href="point of sale.html">Point Of Sale Payment</a></li>
-                                    <li><a class="dropdown-item" id="dropdownitemcolor" href="mobile payment.html">Mobile Payments</a></li>
-                                    <li><a class="dropdown-item" id="dropdownitemcolor" href="acquiring.html">Acquiring</a></li>
-                                    <li><a class="dropdown-item" id="dropdownitemcolor" href="self checkout.html">Self Checkout</a></li>
-                                    <li><a class="dropdown-item" id="dropdownitemcolor" href="Integration.html">Integration</a></li>
-                                    <li><a class="dropdown-item" id="dropdownitemcolor" href="Merchant Payment Account.html">Merchant Payment Account</a></li>
-                                    <li><a class="dropdown-item" id="dropdownitemcolor" href="Pay By Bank.html">Pay By Bank</a></li>
-                                    <li><a class="dropdown-item" id="dropdownitemcolor" href="Tap To Pay.html">Tap To Pay</a></li>
-                                    
-                                </ul>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Commerce</a>
-                                <ul class="dropdown-menu border-0 shadow bsb-zoomIn" id="dropdownitemcolor" aria-labelledby="servicesDropdown">
-                                    <li><a class="dropdown-item" id="dropdownitemcolor" href="Loyalt Engagemant.html">Loyalt Engagemant</a></li>
-                                    <li><a class="dropdown-item" id="dropdownitemcolor" href="Inventory Management.html">Inventory Management</a></li>
-                                    <li><a class="dropdown-item" id="dropdownitemcolor" href="Fraud Prevention.html">Fraud Prevention</a></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="accountDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Data</a>
-                                <ul class="dropdown-menu border-0 shadow bsb-zoomIn" id="offcanvasNavbarDropdown" aria-labelledby="accountDropdown">
-                                  <li><a class="dropdown-item" id="dropdownitemcolor" href="Payment Analytics.html">Payment Analytics</a></li>
-                                    <!--li><a class="dropdown-item" id="dropdownitemcolor" href="tangi payment/how it works.html">How It Works</a></li>
-                                    <li><a class="dropdown-item" id="dropdownitemcolor" href="tangi payment/Legit vs. Illicit.html">Legit vs. Illicit</a></li-->
-                                </ul>
-                            </li>
-                            <!--li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Token Info</a>
-                                <ul class="dropdown-menu border-0 shadow bsb-zoomIn" id="dropdownitemcolor" aria-labelledby="servicesDropdown">
-                                    <li><a class="dropdown-item" id="dropdownitemcolor" href="token information/market opportunity.html">Market Opportunity</a></li>
-                                    <li><a class="dropdown-item" id="dropdownitemcolor" href="token information/token details & goals.html">Token Details & Goals</a></li>
-                                    <li><a class="dropdown-item" id="dropdownitemcolor" href="token information/roadmap.html"> RoadMap</a></li>
-                                    <li><a class="dropdown-item" id="dropdownitemcolor" href="token information/updates.html"> Updates</a></li>
-
-                                    <li><a class="dropdown-item" id="dropdownitemcolor" href="token information/Adaptive Risk Control.html"> Risk Management</a></li>
-                                </ul>
-                            </li>
-    
-                            <li class="nav-item dropdown">
-                              <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Project info</a>
-                              <ul class="dropdown-menu border-0 shadow bsb-zoomIn" id="dropdownitemcolor" aria-labelledby="servicesDropdown">
-                                  <li><a class="dropdown-item" id="dropdownitemcolor" href="project_info/The Short Version.html">The Short Version</a></li>
-                                  <li><a class="dropdown-item" id="dropdownitemcolor" href="project_info/Understanding the problem.html">Understanding the problem</a></li>
-                                  <li><a class="dropdown-item" id="dropdownitemcolor" href="project_info/Our Legal Solution.html"> Our Legal Solution</a></li>
-                                  <li><a class="dropdown-item" id="dropdownitemcolor" href="project_info/The Crucial Role of the token.html"> The Crucial Role of the token</a></li>
-                                  <li><a class="dropdown-item" id="dropdownitemcolor" href="project_info/Illegal competitors.html"> Illegal competitors</a></li>
-                                  <li><a class="dropdown-item" id="dropdownitemcolor" href="project_info/The legal landscape.html"> The legal landscape</a></li>
-                                  <li><a class="dropdown-item" id="dropdownitemcolor" href="project_info/Our leverage.html"> Our leverage</a></li>
-                                  <li><a class="dropdown-item" id="dropdownitemcolor" href="project_info/So far so good.html"> So far so good </a></li>
-                                  <li><a class="dropdown-item" id="dropdownitemcolor" href="project_info/Expected Growth.html"> Expected Growth</a></li>
-                                  <li><a class="dropdown-item" id="dropdownitemcolor" href="project_info/Market Testing Complete.html"> Market Testing Complete</a></li>
-                                  <li><a class="dropdown-item" id="dropdownitemcolor" href="project_info/Market Opportunity.html"> Market Opportunity</a></li>
-                                  <li><a class="dropdown-item" id="dropdownitemcolor" href="project_info/Our Team.html"> Our Team</a></li>
-                                  <li><a class="dropdown-item" id="dropdownitemcolor" href="project_info/Comparable Projects.html"> Comparable Projects</a></li>
-                                  <li><a class="dropdown-item" id="dropdownitemcolor" href="project_info/The Solution.html"> The Solution</a></li>
-                                  <li><a class="dropdown-item" id="dropdownitemcolor" href="project_info/The Problem.html"> The Problem</a></li>
-                                  <li><a class="dropdown-item" id="dropdownitemcolor" href="project_info/Our Story.HTML"> Our Story</a></li>
-                                  <li><a class="dropdown-item" id="dropdownitemcolor" href="project_info/Risk Management.html"> Risk Factor</a></li>
-                                  <li><a class="dropdown-item" id="dropdownitemcolor" href="project_info/Our Competitive Advantages.html">Our Competitive Advantages</a></li>
-
-
-
-                              </ul>
-                          </li-->
-                            <!--li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">About Us</a>
-                                <ul class="dropdown-menu border-0 shadow bsb-zoomIn" id="dropdownitemcolor" aria-labelledby="servicesDropdown">
-                                    <li><a class="dropdown-item" id="dropdownitemcolor" href="about us/core team.html">Core Team</a></li>
-                                    <li><a class="dropdown-item" id="dropdownitemcolor" href="about us/advisors.html">Advisor</a></li>
-                                    <li><a class="dropdown-item" id="dropdownitemcolor" href="about us/parteners.html">Partners</a></li>
-                                </ul>
-                            </li-->
-                            <!--li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Payment</a>
-                                <ul class="dropdown-menu border-0 shadow bsb-zoomIn" id="dropdownitemcolor" aria-labelledby="servicesDropdown">
-                                    <li><a class="dropdown-item" id="dropdownitemcolor" href="#">The Problem</a></li>
-                                    <li><a class="dropdown-item" id="dropdownitemcolor" href="#">Our Solution</a></li>
-                                    <li class="dropdown-submenu">
-                                        <a class="dropdown-item dropdown-toggle" id="dropdownitemcolor" href="#">Incentives</a>
-                                        <ul class="dropdown-menu border-0 shadow bsb-zoomIn" id="dropdownitemcolor">
-                                            <li><a class="dropdown-item" id="dropdownitemcolor" href="#">Retailer Benefits</a></li>
-                                            <li><a class="dropdown-item" id="dropdownitemcolor" href="#">Consumer Benefits</a></li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                            </li-->
-                            <li class="nav-item">
-                              <a class="nav-link active" id="textstyle" aria-current="page" href="../our story.html">Our Story</a>
-                          </li>
-                         
-                          
-                        </ul>
-                       
-                        <!--div id="contact_bt_css" class="bytokenbtnnav">
-                          <a class="nav-link" id="bytokenbtnnav" href="https://member.gettangi.com/" target="_blank">Buy Token</a>
-                      </div-->
-                        <div id="contact_bt_css">
-                            <a class="nav-link" id="confetti-btn" onclick="sendMail()">Contact Us</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </nav>
+<body style="opacity: 0; transition: opacity 0.4s ease;">
+    <!-- Header Section -->
+    <header class="header">
+        <div id="navbar-container"></div>
     </header>
 
     <main>
-        <div class="container" id="firstsectionbg">
-            <div class="row" id="firstsectionrow">
-                <div class="col-6" id="fistsectioncoltext">
-                    <h5 style="color: #cc2eb2; font-weight: bold;">PAYMENT PROCESSOR</h5>
-                    <h1 class="firstsectionheading">Simple card payment processing</h1>
-                    <br>
-                    <p>Explore new markets by accepting card payments from customers anywhere</p>
-                   
-                </div>
-                <div class="col-6" id="fistsectioncolimage">
-                    <img src="../images/acquiring page first card image.png" width="100%" height="100%" alt="Make purchases and get loyalty rewards using the Get8Tech mobile app.">
+        <!-- Hero Section -->
+        <section class="pos-hero">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 pos-hero-content" data-aos="fade-right">
+                        <div class="hero-badge">
+                            <span>Payment Processor</span>
+                        </div>
+                        <h1>Simple card payment processing</h1>
+                        <p>Explore new markets by accepting card payments from customers anywhere in the world with our secure, integrated payment platform.</p>
+                        <a href="#" class="btn-cta">Get Started Today</a>
+                    </div>
+                    <div class="col-lg-6 pos-hero-image" data-aos="fade-left" data-aos-delay="200">
+                        <img src="../images/acquiring page first card image.png" alt="Card payment processing dashboard showing transactions and analytics">
+                    </div>
                 </div>
             </div>
-        </div>
+        </section>
 
-
-        <div class="fivthsectionbg" style="margin-top: 50px;">
-            <div class="container" id="fivesection">
-                <b class="fivesectionheading">Everything under one roof for payments</b>
-                <p class="fivesectioncontent">Get Tech Payments offers many banking services through its partners. We can also process payments from any of your sales channels.</p>
-               </div>
-               <br>
-            
-               <div class="container">
-                <div class="row" id="secondcardmainrow">
-                    <div class="col" id="secondcardmaincol1">
-                        <div class="row" id="secondsectionrow">
-                            <div class="col">
-                                <img src="../images/acquiring page second card image 1.png" width="70" height="60" alt="">  <br>
-                                <b style="font-size: 18px; color: #cc2eb2;">All card activity managed</b>
-                                <br>
-                                
-                                <p>Full management of all card activity including transactions. refunds & chargebacks</p>
-                            </div>
-                            <div class="col">
-                                <img src="../images/acquiring page second card image 2.png" width="60" height="60" alt=""> 
-                                <br>
-                                 <b style="font-size: 18px; color: #cc2eb2;">Flexible settlement</b>
-                                <br>
-                              
-                                 <p>Funds can be settlement at any times that best suite the need of your business.</p>
-                            </div>
-                      
+        <!-- UPDATED: Features Section -->
+        <section class="pos-features">
+            <div class="container features-container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 features-content" data-aos="fade-right">
+                        <div class="features-highlight">
+                            <i class="fas fa-check-circle"></i>
+                            All-in-One Payment Solution
                         </div>
-                        <div class="row" id="secondsectionrow">
-                            <div class="col">
-                                <img src="../images/acquiring page second card image 3.png" width="60" height="60" alt="">
-                                <br>
-                                <b style="font-size: 18px; color: #cc2eb2;">Full insights </b>
-                                <br>
-                                <p>View every transaction on our secure platform which covers off transactions in real-time.</p>
-                            </div>
-                            <div class="col">
-                                <img src="../images/acquiring page second card image 4.png" width="60" height="60" alt="">
-                                <br>
-                                <b style="font-size: 18px; color: #cc2eb2;"> Multiple currencies</b>
-                                <br>
-                                <p>We offer support for settlement on multiple currencies</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col" id="secondcardmaincol2">
-                        <img src="../images/acquiring page second card image.png" width="100%" height="100%" alt="">
-                    </div>
-                </div>
-               
-               </div>
-        </div>
-
-        <div class="second_section">
-            <p class="thirdsectionstriketext">Get started quickly</p>
-            <p style="font-size: 18px;">Our onboarding process could get up and running in as little as just 3 days, enabled by our unique proprietary</p>
-        </div>
-
-
-        <div class="fivthsectionbg">
-            <div class="container" id="fivesection">
-             
-               </div>
-               <br>
-               <div class="container">
-                <div class="row" id="thirdsectionrow">
-                    <div class="col">
-                        <img src="../images/online payment third card img 1.png" width="50" height="50" alt="">  <br> <br>
-                        <b style="font-size: 18px; color: #cc2eb2;">complete technology </b>
-                        <br>
+                        <h2>Everything under one roof for payments</h2>
+                        <p>Get8Tech Payments offers comprehensive banking services through its partners. We can process payments from any of your sales channels with a single integration.</p>
                         
-                        <p>Complete application After you register your interest with us, we will ask you to complete on application.</p>
+                        <div class="features-grid">
+                            <div class="feature-item" data-aos="fade-up" data-aos-delay="100">
+                                <div class="feature-icon">
+                                    <i class="fas fa-credit-card"></i>
+                                </div>
+                                <div class="feature-text">
+                                    <h3>All card activity managed</h3>
+                                    <p>Full management of all card activity including transactions, refunds & chargebacks in one intuitive dashboard.</p>
+                                </div>
+                            </div>
+                            <div class="feature-item" data-aos="fade-up" data-aos-delay="200">
+                                <div class="feature-icon">
+                                    <i class="fas fa-hand-holding-usd"></i>
+                                </div>
+                                <div class="feature-text">
+                                    <h3>Flexible settlement</h3>
+                                    <p>Funds can be settled at any time that best suits the needs of your business with customizable payout schedules.</p>
+                                </div>
+                            </div>
+                            <div class="feature-item" data-aos="fade-up" data-aos-delay="300">
+                                <div class="feature-icon">
+                                    <i class="fas fa-chart-line"></i>
+                                </div>
+                                <div class="feature-text">
+                                    <h3>Full insights</h3>
+                                    <p>View every transaction on our secure platform with real-time analytics and comprehensive reporting.</p>
+                                </div>
+                            </div>
+                            <div class="feature-item" data-aos="fade-up" data-aos-delay="400">
+                                <div class="feature-icon">
+                                    <i class="fas fa-globe"></i>
+                                </div>
+                                <div class="feature-text">
+                                    <h3>Multiple currencies</h3>
+                                    <p>We offer support for settlement in multiple currencies to help you expand your global reach.</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col">
-                        <img src="../images/online payment third card img 2.png" width="50" height="50" alt=""> 
-                        <br>
-                        <br>
-                        <b style="font-size: 18px; color: #cc2eb2;">Quick underwriting</b>
-                        <br>
-                      
-                        <p>If successful your application will be checked by underwriting within 48 hours in some cases</p>
+                    <div class="col-lg-6 features-image" data-aos="fade-left" data-aos-delay="300">
+                        <img src="../images/acquiring page second card image.png" alt="Payment processing features visualization" class="img-fluid">
                     </div>
-                    <div class="col">
-                        <img src="../images/online payment third card img 3.png" width="50" height="50" alt="">
-                        <br>
-                        <br>
-                        <b style="font-size: 18px; color: #cc2eb2;">Account created   </b>
-                        <br>
-                        <p>Once approved, we will create an account rapidly to enable you to start taking payments ASAP</p>
-                    </div>
-                    <div class="col">
-                        <img src="../images/online payment third card img 4.png" width="50" height="50" alt="">
-                        <br>
-                        <b style="font-size: 18px; color: #cc2eb2;">Ready to transact </b>
-                        <br>
-                        <p>With everything resolved we're delighted to say that you can start taking transactions</p>
-                    </div>
-                    <!--di style="text-align: center; margin-top: 30px;">
-                        <a href="#" class="btnfirstsection">Message our team</a>
-                    </div-->
-                </div>
-               </div>
-        </div>
-
-     
-<br>
-        <div class="fourt_section_strik">
-            <p class="thirdsectionstriketext">Encouraging you to grow</p>
-            <p style="font-size: 18px;">Get8Tech's 'Payments' payment processing plays a crucial role when funds are being captured - we calculate all associated fees and ensure the correct transaction amount is reliably transferred to a merchant's bank account.</p>
-        </div>
-
-
-        <div class="container" style="margin-top: 50px;">
-            <div class="row" id="fourthcardrow">
-                <div class="col" id="furthcardcol">
-                    <img src="../images/acquiring page third card image1.png" width="50" height="50" alt="">
-                    <h3>One less integration</h3>
-                    <p>Avoid costs and complexity. We provide a merchant account and payment platform all through one integration.</p>
-                </div>
-                <div class="col" id="furthcardcol">
-                    <img src="../images/acquiring page third card image2.png" width="50" height="50" alt="">
-
-                    <h3>Total support</h3>
-                    <p>Whatever you need we've got you covered with dadicated 24/7 global support</p>
                 </div>
             </div>
-            <div class="row" id="fourthcardrow">
-                <div class="col" id="furthcardcol">
-                    <img src="../images/acquiring page third card image3.png" width="50" height="50" alt="">
-                    
-                    <h3>Flexible account configuration through merchant processor</h3>
-                    <p>Set up your merchant account to suit the way your business operates. Have a separate account per currency or sales channel or all through one.</p>
+        </section>
+
+        <!-- Quick Start Section -->
+        <section class="pos-process">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <h2 class="section-title">Get started quickly</h2>
+                    <p class="section-subtitle">Our streamlined onboarding process gets you up and running in as little as 3 days, enabled by our unique proprietary technology.</p>
                 </div>
-                <div class="col" id="furthcardcol">
-                    <img src="../images/acquiring page third card image4.png" width="50" height="50" alt="">
-                    <h3>Full fraud protection</h3>
-                    <p>Real-time fraud-prevention</p>
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 process-step" data-aos="fade-up" data-aos-delay="100">
+                        <div class="process-icon">
+                            <i class="fas fa-file-alt"></i>
+                        </div>
+                        <h4>Complete application</h4>
+                        <p>After you register your interest with us, we'll guide you through our simple application process.</p>
+                    </div>
+                    <div class="col-lg-3 col-md-6 process-step" data-aos="fade-up" data-aos-delay="200">
+                        <div class="process-icon">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        <h4>Quick underwriting</h4>
+                        <p>If successful, your application will be checked by underwriting within 48 hours in most cases.</p>
+                    </div>
+                    <div class="col-lg-3 col-md-6 process-step" data-aos="fade-up" data-aos-delay="300">
+                        <div class="process-icon">
+                            <i class="fas fa-user-check"></i>
+                        </div>
+                        <h4>Account created</h4>
+                        <p>Once approved, we'll create your account rapidly to enable you to start taking payments ASAP.</p>
+                    </div>
+                    <div class="col-lg-3 col-md-6 process-step" data-aos="fade-up" data-aos-delay="400">
+                        <div class="process-icon">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <h4>Ready to transact</h4>
+                        <p>With everything resolved, we're delighted to say that you can start taking transactions immediately.</p>
+                    </div>
                 </div>
             </div>
-            <div class="row" id="fourthcardrow">
-                <div class="col" id="furthcardcol">
-                    <img src="../images/acquiring page third card image5.png" width="50" height="50" alt="">
+        </section>
 
-                    <h3>Trust & confidence</h3>
-                    <p>You can rest easy knowing that Get8Tech Payments has got your back.</p>
+        <!-- Benefits Section -->
+        <section class="pos-benefits">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <h2 class="section-title">Encouraging you to grow</h2>
+                    <p class="section-subtitle">Get8Tech's payment processing plays a crucial role when funds are being captured - we calculate all associated fees and ensure the correct transaction amount is reliably transferred to your bank account.</p>
                 </div>
-                <div class="col" id="furthcardcol">
-                    <img src="../images/acquiring page third card image6.png" width="50" height="50" alt="">
-
-                    <h3>Flexible settlement</h3>
-                    <p>Maximise your cashflow through our flexible settlement options by selecting your preferred terms.</p>
+                <div class="row g-4">
+                    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                        <div class="benefit-card">
+                            <div class="benefit-icon">
+                                <i class="fas fa-plug"></i>
+                            </div>
+                            <h3>One less integration</h3>
+                            <p>Avoid costs and complexity. We provide a merchant account and payment platform all through one integration.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                        <div class="benefit-card">
+                            <div class="benefit-icon">
+                                <i class="fas fa-headset"></i>
+                            </div>
+                            <h3>Total support</h3>
+                            <p>Whatever you need, we've got you covered with dedicated 24/7 global support from payment experts.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                        <div class="benefit-card">
+                            <div class="benefit-icon">
+                                <i class="fas fa-cogs"></i>
+                            </div>
+                            <h3>Flexible account configuration</h3>
+                            <p>Set up your merchant account to suit your business. Have separate accounts per currency or sales channel.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                        <div class="benefit-card">
+                            <div class="benefit-icon">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                            <h3>Full fraud protection</h3>
+                            <p>Real-time fraud prevention with advanced machine learning algorithms to protect your business.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                        <div class="benefit-card">
+                            <div class="benefit-icon">
+                                <i class="fas fa-lock"></i>
+                            </div>
+                            <h3>Trust & confidence</h3>
+                            <p>You can rest easy knowing that Get8Tech Payments has got your back with enterprise-grade security.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                        <div class="benefit-card">
+                            <div class="benefit-icon">
+                                <i class="fas fa-calendar-alt"></i>
+                            </div>
+                            <h3>Flexible settlement</h3>
+                            <p>Maximize your cashflow through our flexible settlement options by selecting your preferred terms.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
-            
-        </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="pos-cta" data-aos="fade-up">
+            <div class="container">
+                <h2>Ready to simplify your payment processing?</h2>
+                <p>Join thousands of businesses that trust Get8Tech for their payment processing needs. Get started today and experience the difference.</p>
+                <a href="#" class="btn-cta">Get Started Today</a>
+            </div>
+        </section>
     </main>
 
-    <br>
-    <br>
-    <br>
-    <footer>
-        <div class="footer-wrapper">
-          <div class="footer-left">
-            <h2>Let’s Talk</h2>
-            <p>
-              Learn more about Get8Tech Payments by reaching out to us at <br>
-              <strong>admin@get8tech.com</strong>
-            </p>
-          </div>
-          <div class="footer-design"></div>
-          <div class="footer-bottom">
-            © 2024 Get8Tech Inc. All rights reserved.
-          </div>
-        </div>
-      </footer>
-      
-     <!--Start of Tawk.to Script-->
-<script type="text/javascript">
-    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-    (function(){
-    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-    s1.async=true;
-    s1.src='https://embed.tawk.to/679e4457825083258e0ee37f/1ij13lu2t';
-    s1.charset='UTF-8';
-    s1.setAttribute('crossorigin','*');
-    s0.parentNode.insertBefore(s1,s0);
-    })();
+    <!-- Footer -->
+    <div id="footer-container"></div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 1000,
+            once: true,
+            offset: 100
+        });
+
+        // Page load transition
+        document.addEventListener('DOMContentLoaded', function() {
+            document.body.classList.add('loaded');
+        });
     </script>
-    <!--End of Tawk.to Script-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-    <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"> </script>
-    <script src="scriptpayment.js"></script>
 </body>
 </html>
